@@ -138,6 +138,7 @@
       <DependentUpon>202112210607513_Create_Table_LopHoc.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\LHDSinhVien214.cs" />
     <Compile Include="Models\LopHoc214.cs" />
     <Compile Include="Models\LTQLDb.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

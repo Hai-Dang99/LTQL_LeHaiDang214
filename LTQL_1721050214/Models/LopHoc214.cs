@@ -18,5 +18,6 @@ namespace LTQL_1721050214.Models
         [StringLength(50)]
         [Display(Name = "Tên Lớp")]
         public string TenLop { get; set; }
+        public ICollection<LHDSinhVien214> LHDSinhVien214s { get; set; }
     }
 }

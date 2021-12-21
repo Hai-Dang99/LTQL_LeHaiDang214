@@ -1,0 +1,33 @@
+﻿@model IEnumerable<LTQL_1721050214.Models.LopHoc214>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Thêm mới", "Thêm")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TenLop)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenLop)
+        </td>
+        <td>
+            @Html.ActionLink("Sửa", "Sửa", new { id=item.MaLop }) |
+            @Html.ActionLink("Chi Tiết", "Chi Tiết", new { id=item.MaLop }) |
+            @Html.ActionLink("Xóa", "Xóa", new { id=item.MaLop })
+        </td>
+    </tr>
+}
+
+</table>
